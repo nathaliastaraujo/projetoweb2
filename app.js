@@ -50,7 +50,7 @@ app.use(flash())
 
 
 // Rotas
-app.use('/index', index)
+app.use('/', index)
 
 // Mongoose
 mongoose.Promise = global.Promise;
