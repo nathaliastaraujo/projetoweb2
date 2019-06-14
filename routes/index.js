@@ -95,7 +95,7 @@ router.post('/cadastrar', (req, res) => {
     }
 
     if(erros.length > 0){
-        res.render("cadastro", {erros: erros})
+        res.render("index", {erros: erros})
     }
     else{
 
@@ -126,7 +126,7 @@ router.post('/cadastrar', (req, res) => {
                             res.redirect("posts")
                             }).catch((err) =>{
                                 req.flash("erro_msg", "erro")
-                                res.redirect('home')
+                                res.redirect('posts')
                             })
                            
                         
@@ -164,12 +164,12 @@ router.post('/login', (req, res)=>{
         Usuario.find({email: email}).then((usuario) => {
             if( usuario.length <= 0 || usuario[0].senha != senha)
             {
-                res.render("cadastro")
+                res.render('posts')
             }
             else if(usuario[0].senha == senha)
             {
                 req.session.login = login;
-                res.render('home');
+                res.render('posts');
            }
 
         })
