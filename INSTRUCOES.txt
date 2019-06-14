@@ -1,6 +1,10 @@
-Projeto 2 - Programação para Web
-Nathália dos Santos Araújo - 1748831
+Projeto 2 - ProgramaÃ§Ã£o para Web
+NathÃ¡lia dos Santos AraÃºjo - 1748831
 Hidemi Senno Teruya - 1705334
+
+https://projetoweb-2.herokuapp.com/cadastro
+
+https://github.com/nathaliastaraujo/projetoweb2
 
 Para executar o projeto, deve-se instalar na pasta:
 
@@ -13,4 +17,4 @@ Iniciar o servidor do MongoDB:
 mongod
 
 Executar em outro prompt:
-node app.js
+npm start
